@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon TCG API</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pokémon Card Search</h1>
+    <p>Enter a Pokémon card ID to fetch data:</p>
+    
+    <div>
+      <input type="text" id="cardId" placeholder="Enter card ID (e.g., xy7-54)">
+      <button onclick="fetchCardData()">Get Card Data</button>
+    </div>
+    
+    <div id="cardData" class="card-data">
+      <!-- API data will be displayed here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

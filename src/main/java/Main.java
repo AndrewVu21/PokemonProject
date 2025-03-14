@@ -1,8 +1,9 @@
+package src.main.java;
 import java.net.HttpURLConnection;
 import java.util.Scanner;
 import java.net.URL;
 
-public class Code {
+public class Main {
     public static void main(String[] args){
       try{
         Scanner Userinp = new Scanner(System.in); // Opened a scanner for user input
