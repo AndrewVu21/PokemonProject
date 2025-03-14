@@ -7,15 +7,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <div class="container">
-    <h1>Pokémon Card Search</h1>
-    <p>Enter a Pokémon card ID to fetch data:</p>
-    
+    <h1 style="color: white; font-size: 32px; margin-bottom: 15px;">Pokémon Card Search</h1>
+
+    <!-- Search by Card ID -->
+    <p style="color: white; font-size: 16px;">Enter a Pokémon card ID to fetch data:</p>
+
     <div>
       <input type="text" id="cardId" placeholder="Enter card ID (e.g., xy7-54)">
       <button onclick="fetchCardData()">Get Card Data</button>
     </div>
-    
+    <hr> 
+    <p style="color: white; font-size: 16px;">Search for all cards of a Pokémon:</p>
+    <div>
+      <input type="text" id="pokemonName" placeholder="Enter Pokémon name (e.g., Charizard)">
+      <button onclick="fetchAllCards()">Get All Cards</button>
+    </div>
+
+    <!-- Results Container -->
     <div id="cardData" class="card-data">
       <!-- API data will be displayed here -->
     </div>
